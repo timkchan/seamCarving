@@ -11,16 +11,20 @@ class Arrays {
     /** Returns a new array consisting of the elements of A followed by the
      *  the elements of B. */
     static int[] catenate(int[] A, int[] B) {
-        /* *Replace this body with the solution. */
-        return null;
+        int[] result = new int[A.length + B.length];
+        System.arraycopy(A, 0, result, 0, A.length);
+        System.arraycopy(B, 0, result, A.length, B.length);
+        return result;
     }
 
     /* 2b. */
     /** Returns the array formed by removing LEN items from A,
      *  beginning with item #START. */
     static int[] remove(int[] A, int start, int len) {
-        /* *Replace this body with the solution. */
-        return null;
+        int[] result = new int[A.length - len];
+        System.arraycopy(A, 0, result, 0, start);
+        System.arraycopy(A, start + len, result, start, A.length - start - len);
+        return result;
     }
 
     /* 4 (optional). */
