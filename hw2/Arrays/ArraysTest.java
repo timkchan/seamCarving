@@ -35,7 +35,7 @@ public class ArraysTest {
 
     /** Test for remove */
     @Test
-    public void TestRemove(){
+    public void TestRemove() {
     	int[] A = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
     	int[] result = Arrays.remove(A, 3, 3);
@@ -49,8 +49,16 @@ public class ArraysTest {
 
     	result = Arrays.remove(A, 0, 10);
     	assertEquals(Utils.equals(new int[] {}, result), true);
-
     }
+
+    /** Test for naturalRuns 
+    @Test
+    public void TestNaturalRuns() {
+    	int[] a  = new int[] {1, 3, 7, 5, 4, 6, 9, 10};
+    	int[][] expected = new int[][]  {{1, 3, 7}, {5}, {4, 6, 9, 10}};
+    	assertEquals(java.util.Arrays.deepEquals(expected, Arrays.naturalRuns(a)), true);
+    }
+	*/
 
     public static void main(String[] args) {
         System.exit(ucb.junit.textui.runClasses(ArraysTest.class));

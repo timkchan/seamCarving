@@ -44,6 +44,24 @@ public class MatrixUtilsTest {
 		assertEquals(java.util.Arrays.deepEquals(MatrixUtils.transpose(a), b), true);
 	}
 
+
+	/** Test for minArray.*/
+    @Test
+    public void TestMinArray() {
+		double [][] a = new double[6][];
+	    a[0] = new double[] {1000000, 1000000, 1000000, 1000000};
+	    a[1] = new double[] {1000000, 75990, 30003, 1000000};
+	    a[2] = new double[] {1000000, 30002, 103046, 1000000};
+	    a[3] = new double[] {1000000, 29515, 38273, 1000000};
+	    a[4] = new double[] {1000000, 73403, 35399, 1000000};
+	    a[5] = new double[] {1000000, 1000000, 1000000, 1000000};
+	    //double [][] b = MatrixUtils.accumulate(a, Orientation.VERTICAL);
+	    //System.out.println(MatrixUtils.matrixToString(b));
+	    //System.out.println();
+	    //double [][] c = MatrixUtils.accumulate(a, Orientation.HORIZONTAL);
+	    //System.out.println(MatrixUtils.matrixToString(c));
+	}
+
 	/** Test for minArray.*/
     @Test
     public void TestMinArray() {
@@ -71,6 +89,9 @@ public class MatrixUtilsTest {
 
 
 	}
+
+
+
 
 
     public static void main(String[] args) {

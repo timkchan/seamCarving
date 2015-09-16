@@ -191,6 +191,8 @@ public class MatrixUtils {
 
     /** does nothing. ARGS not used. use for whatever purposes you'd like */
     public static void main(String[] args) {
+        
+
         /* sample calls to functions in this class are below
 
         ImageRescaler sc = new ImageRescaler("4x6.png");

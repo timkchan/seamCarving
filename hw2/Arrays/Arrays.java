@@ -33,8 +33,20 @@ class Arrays {
      *  For example, if A is {1, 3, 7, 5, 4, 6, 9, 10}, then
      *  returns the three-element array
      *  {{1, 3, 7}, {5}, {4, 6, 9, 10}}. */
+    /*
     static int[][] naturalRuns(int[] A) {
-        /* *Replace this body with the solution. */
+        if(A.length == 0 || A.length == 1) return new int[][] {A};
+        int subArray = 1, start = 0, end = 0;
+        for(int i = 1; i < A.length; i += 1) if(A[i] <= A[i - 1]) subArray += 1;
+        int[][] = new int[subArray][];
+        int loc = 0;
+        for(int i = 1; i < A.length; i += 1) {
+            if(A[i] <= A[start]) {
+                end = i;
+                arraycopy(A, start, result[loc])
+            }
+        }
         return null;
     }
+    */
 }
