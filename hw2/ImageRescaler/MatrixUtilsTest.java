@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class MatrixUtilsTest {
     /** Test for accumulateVertical.*/
     @Test
-    public void TestAccumulateVertical() {
+    public void testAccumulateVertical() {
     	double[][] e = new double[][] {{1000000, 1000000, 1000000, 1000000},
 						{1000000, 75990, 30003, 1000000},
 						{1000000, 30002, 103046, 1000000},
@@ -31,7 +31,7 @@ public class MatrixUtilsTest {
 
     /** Test for transpose.*/
     @Test
-    public void TestTranspose() {
+    public void testTranspose() {
 		double[][] a =new double[][] {	{1, 2 ,3, 4},
 										{5, 6, 7, 8},
 										{9, 10, 11, 12}};
@@ -47,7 +47,7 @@ public class MatrixUtilsTest {
 
 	/** Test for minArray.*/
     @Test
-    public void TestMinArray() {
+    public void testMinArray() {
 		double [][] a = new double[6][];
 	    a[0] = new double[] {1000000, 1000000, 1000000, 1000000};
 	    a[1] = new double[] {1000000, 75990, 30003, 1000000};
@@ -62,9 +62,9 @@ public class MatrixUtilsTest {
 	    //System.out.println(MatrixUtils.matrixToString(c));
 	}
 
-	/** Test for minArray.*/
+	/** Test for minArray.
     @Test
-    public void TestMinArray() {
+    public void testMinArray() {
 		double[][] a =new double[][] {	{8, 2 ,3, 4},
 										{10, 6, 7, 0},
 										{9, 10, 121, 12}};
@@ -74,10 +74,11 @@ public class MatrixUtilsTest {
 		//assertEquals(java.util.Arrays.Equals(result, new int[]{1, 3, 0}), true);
 		//assertEquals(Utils.equals(new int[] {1, 3, 0}, result), true);
 	}
+	*/
 
-	/** Test for minArray.*/
+	/** Test for testFindVerticalSeam.*/
     @Test
-    public void TestFindVerticalSeam() {
+    public void testFindVerticalSeam() {
     	double[][] am =new double[][] {{1000000, 1000000, 1000000, 1000000},
 						{2000000, 1075990, 1030003, 2000000},
 						{2075990, 1060005, 1133049, 2030003},
