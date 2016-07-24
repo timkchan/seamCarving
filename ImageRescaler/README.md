@@ -7,7 +7,7 @@ Suppose you have an image and want rescale it in a way that doesn't preserve the
 
 There is an image resizing technique known as [seam carving] that avoids these problems.
 
-### 3. Files
+### 2. Files
 
 Files in this project (not all are shown):
 
@@ -19,7 +19,7 @@ Files in this project (not all are shown):
 * `*.java`:                 Helper classes.
 * `*.jpg`:                  Images for demo.
 
-### 5. Running the Image Rescaler
+### 3. Running the Image Rescaler
 Go into project root directory (where you will see files `ImageRescaler.java`, `MatrixUtils.java`), remove all old classes:
 ```sh
 $ make clean
@@ -42,7 +42,7 @@ $ java ImageRescaler face.jpg 200 100
 ```
 \* First number `200` is how many columns to reduced by and the second number `100` is how many rows to reduced by. Feel free to experiment with different numbers.
 
-### 6. Class Project Site
+### 4. Class Project Site
 [here]
 
 [seam carving]:  <https://en.wikipedia.org/wiki/Seam_carving>
