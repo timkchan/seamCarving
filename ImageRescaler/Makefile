@@ -28,6 +28,10 @@ JFLAGS = -g
 # first and then 'gmake'
 default: $(ALL_CLASSES)
 
+# Compile all file then run unit tests
+check: 	default
+	java MatrixUtilsTest
+
 # Check style of source files with style61b.
 style:
 	style61b $(STUDENT)
